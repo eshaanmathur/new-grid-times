@@ -52,7 +52,7 @@ const SuperHeader = styled.div`
     background: var(--color-gray-900);
     color: white;
 
-    @media ${QUERIES.desktopAndUp} {
+    @media ${QUERIES.laptopAndUp} {
         display: none;
     }
 `;
@@ -78,7 +78,7 @@ const ActionGroup = styled.div`
 const DesktopActionGroup = styled.div`
     display: none;
 
-    @media ${QUERIES.desktopAndUp} {
+    @media ${QUERIES.laptopAndUp} {
         display: flex;
         flex-direction: var(--direction, row);
         gap: var(--gap, 8px);
@@ -106,7 +106,7 @@ const MainHeader = styled(MaxWidthWrapper)`
         margin-bottom: 72px;
     }
 
-    @media ${QUERIES.desktopAndUp} {
+    @media ${QUERIES.laptopAndUp} {
         margin-top: 16px;
         justify-content: space-between;
         align-items: baseline;
