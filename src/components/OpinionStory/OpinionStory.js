@@ -26,6 +26,7 @@ const Link = styled.a`
     }
 
     @media ${QUERIES.tabletOnly} {
+        flex: 1 1 172px;
         &:not(:first-child) {
             padding-top: 0px;
         }
