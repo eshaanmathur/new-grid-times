@@ -82,6 +82,13 @@ const DesktopActionGroup = styled.div`
         display: flex;
         flex-direction: var(--direction, row);
         gap: var(--gap, 8px);
+
+        &:first-child {
+            justify-self: start;
+        }
+        &:last-child {
+            justify-self: end;
+        }
     }
 `;
 const SubscriptionText = styled.a`
@@ -108,8 +115,10 @@ const MainHeader = styled(MaxWidthWrapper)`
 
     @media ${QUERIES.laptopAndUp} {
         margin-top: 16px;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
         align-items: baseline;
+        justify-content: revert;
     }
 `;
 
